@@ -1,0 +1,125 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: #fff; */
+  color: #333;
+  line-height: 1.5;
+  /* background: #f5f7fa url("/css/img/texture-light.png") repeat; */
+  background-size: 200px 200px;
+  background-color: #f5f7fa;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+/* Inter + Lora  */
+/* h1, h2, nav {
+  font-family: "Inter", sans-serif;
+}
+
+body, p {
+  font-family: "Lora", serif;
+} */
+
+/* Poppins + Roboto */
+/* h1, h2, nav {
+  font-family: "Poppins", sans-serif;
+}
+
+body, p {
+  font-family: "Roboto", sans-serif;
+} */
+
+/* Playfair Dispaly + Source Sans Pro */
+/* h1, h2, nav {
+  font-family: 'Playfair Display', serif;
+}
+
+body, p {
+  font-family: 'Source Sans Pro', sans-serif;
+} */
+
+/* section:nth-child(even) {
+  background-color: #f9f9f9;
+} */
+
+/* Base styles for all sections: mobile first */
+section {
+  width: 100vw; /* fill full viewport width */
+  min-height: 100vh; /* full viewport height */
+  padding: 2rem 1rem; /* breathing room */
+  margin: 0 auto; /* center the section */
+  margin-bottom: 2rem;
+  box-sizing: border-box; /* include padding in size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+  align-items: center; /* horizontally center content */
+  text-align: center;
+}
+
+/* Tablet and up: constrain width and center */
+/* @media (min-width: 768px) {
+  section {
+    width: 90vw;
+    max-width: 800px; 
+    min-height: 80vh;
+    padding: 3rem 2rem;
+    text-align: left; 
+    align-items: flex-start;
+  }
+} */
+
+/* Desktop and up */
+/* @media (min-width: 1024px) {
+  section {
+    width: 80vw;
+    max-width: 1000px;
+    min-height: 70vh;
+    padding: 4rem 3rem;
+  }
+} */
+
+/* Base: Mobile-first layout */
+/* section {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+/* Tablet layout
+@media (min-width: 768px) {
+  section {
+    width: 90vw;
+    max-width: 800px;
+    min-height: auto; 
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+} */
+
+/* Desktop layout
+@media (min-width: 1024px) {
+  section {
+    width: 80vw;
+    max-width: 1000px;
+    padding: 4rem 3rem;
+  }
+} */

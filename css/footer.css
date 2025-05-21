@@ -1,0 +1,11 @@
+footer {
+  background-color: #1a237e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+ul {
+  list-style: none;
+}

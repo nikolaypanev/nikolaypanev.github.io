@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavhan</title>
+    <head>
+      <!-- CSS links -->
+      <link rel="stylesheet" href="/css/styles.css" />
+      <link rel="stylesheet" href="/css/header.css" />
+      <!-- <link rel="stylesheet" href="/css/home.css" /> -->
+      <link rel="stylesheet" href="/css/services.css" />
+      <link rel="stylesheet" href="/css/about.css" />
+      <link rel="stylesheet" href="/css/contact-form.css" />
+      <link rel="stylesheet" href="/css/footer.css" />
+
+      <!-- Fonts -->
+      <!-- Inter + Lora -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lora:wght@400&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- Poppins + Roboto -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- Playfair Display + Source Sans Pro -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- Scripts -->
+      <!-- <script src="/src/welcomeMessageFadeOut.js" defer></script> -->
+    </head>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-container">
+        <img src="/css/img/logo.jpg" alt="Kavhan Services" class="logo" />
+      </div>
+      <!-- <h1 class="page-title">Kavhan</h1> -->
+      <h2 class="page-subtitle">Your Global Workforce, Simplified.</h2>
+      <nav>
+        <ul>
+          <li><a href="#services-overviews">Services Overview</a></li>
+          <li><a href="#about">Who are we?</a></li>
+          <li><a href="#contact-form">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Welcome message overlay -->
+      <!-- <div class="welcome-message" id="welcome-message">
+        <p>Welcome to Kavhan — Global Workforce, Simplified.</p>
+      </div> -->
+    </header>
+
+    <!-- Home section -->
+    <!-- <section>
+      <h2>Home</h2>
+      <p>Welcome to the Kavhan web application.</p>
+    </section> -->
+
+    <!-- Services Overview Section -->
+    <section class="services-overview" id="services-overview">
+      <h2 class="services-title">Services Overview</h2>
+      <p class="services-subtitle">
+        <strong>We specialize in the following areas</strong>
+      </p>
+      <ul class="services-list">
+        <li
+          class="service-card"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60');
+          "
+        >
+          <div class="card-content">
+            <h3>Human Resources Solutions</h3>
+            <p>Comprehensive HR strategies tailored to your business needs.</p>
+          </div>
+        </li>
+        <li
+          class="service-card"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60');
+          "
+        >
+          <div class="card-content">
+            <h3>Hospitality Training & Management</h3>
+            <p>Equip your hospitality team with expert training and tools.</p>
+          </div>
+        </li>
+        <li
+          class="service-card"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1629904853716-f0bc54eea481?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60');
+          "
+        >
+          <div class="card-content">
+            <h3>Talent Acquisition & Development</h3>
+            <p>
+              Identify, attract, and grow the best talent for your business.
+            </p>
+          </div>
+        </li>
+        <!-- <li class="service-card">Human Resources Solutions</li>
+        <li class="service-card">Hospitality Training & Management</li>
+        <li class="service-card">Talent Acquisition & Development</li> -->
+      </ul>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>Who are we?</h2>
+      <p>
+        We are a leading labor supply company in Bulgaria and Europe,
+        specializing in connecting businesses across the continent with skilled
+        and reliable workers from Asia and Africa. We streamline the recruitment
+        process, ensuring a perfect match for your staffing needs and supporting
+        both employers and employees throughout their journey.
+      </p>
+      <p>
+        With more than
+        <strong>fifteen years of experience</strong>, no matter your industry or
+        specific skill requirement, KAVHAN is your comprehensive partner.
+        Contact us today to discuss your unique staffing needs, and let us
+        efficiently connect you with the skilled workers.
+      </p>
+    </section>
+
+    <!-- Contact Form Section  -->
+    <section class="contact-form" id="contact-form">
+      <h1 class="form-title">Contact us</h1>
+      <h2 class="form-subtitle">
+        If you have any questions, feel free to reach out.
+      </h2>
+      <form method="post" id="contact-form" class="form">
+        <label for="name" required>Name</label>
+        <input type="text" />
+        <label for="email" required
+          >Email <span id="email-required">(required)</span></label
+        >
+        <input type="email" />
+        <label for="message">Message</label>
+        <textarea type="text"></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <ul>
+        <li>Privacy policy</li>
+        <li>Terms and conditions</li>
+      </ul>
+      <br />
+      <p id="footer-copyright">
+        &copy;
+        <span id="year"
+          ><script>
+            document.write(new Date().getFullYear());
+          </script></span
+        >
+        Kavhan Services. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
