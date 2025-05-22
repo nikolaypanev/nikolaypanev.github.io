@@ -27,7 +27,7 @@ section:nth-of-type(2) li {
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1)
     ),
-    url("/css/img/topography-pattern.svg");
+    url("/css/img/topography.svg");
   background-color: #ffffff; /* fallback color */
   background-repeat: repeat;
   background-size: contain;
