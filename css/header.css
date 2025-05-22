@@ -176,7 +176,8 @@ nav a:hover {
 }
 
 .page-title,
-.page-subtitle {
+.page-subtitle,
+.navbar-item {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeSlideIn 1s ease-out forwards;
