@@ -75,6 +75,178 @@ nav a:hover {
   user-select: none;
 } */
 
+/* Divider */
+
+/* .header {
+  height: 100vh;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #f9f9f9, #ececec);
+  background-image: url("/css/img/logo.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.header {
+  height: 100vh;
+  width: 100%;
+  /* background-image: url("/css/img/logo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+  color: white;
+}
+
+/* Optional dark overlay for contrast */
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1); /* adjust transparency */
+  z-index: 0;
+}
+
+.page-title,
+.page-subtitle,
+.nav {
+  position: relative;
+  z-index: 1; /* stay above overlay */
+}
+
+/* Divider */
+
+/* Logo */
+.logo-container {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Titles */
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #1a237e;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 80%;
+  margin-bottom: 2rem;
+}
+
+/* Navigation */
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #1a237e;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #3949ab;
+}
+
+.page-title,
+.page-subtitle {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1s ease-out forwards;
+}
+
+.page-subtitle {
+  animation-delay: 0.3s;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ccc;
+}
+
+@media (min-width: 768px) {
+  .nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive scaling */
+@media (min-width: 768px) {
+  .logo-container {
+    max-width: 200px;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+  }
+}
+
 @media (min-width: 768px) {
   nav ul {
     flex-direction: row;
