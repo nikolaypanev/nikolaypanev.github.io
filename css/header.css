@@ -77,7 +77,7 @@ nav a:hover {
 
 /* Divider */
 
-/* .header {
+.header {
   height: 100vh;
   width: 100%;
   padding: 2rem 1rem;
@@ -88,19 +88,15 @@ nav a:hover {
   align-items: center;
   text-align: center;
   background: linear-gradient(to bottom, #f9f9f9, #ececec);
-  background-image: url("/css/img/logo.jpg");
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
+}
 
-.header {
+/* .header {
   height: 100vh;
   width: 100%;
-  /* background-image: url("/css/img/logo.jpg");
+  background-image: url("/css/img/logo.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;
@@ -110,23 +106,23 @@ nav a:hover {
 
   position: relative;
   color: white;
-}
+} */
 
 /* Optional dark overlay for contrast */
-.header::before {
+/* .header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.1); /* adjust transparency */
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 0;
-}
+} */
 
-.page-title,
+/* .page-title,
 .page-subtitle,
 .nav {
   position: relative;
-  z-index: 1; /* stay above overlay */
-}
+  z-index: 1;
+} */
 
 /* Divider */
 
