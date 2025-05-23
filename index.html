@@ -14,6 +14,7 @@
       <!-- <link rel="stylesheet" href="/css/home.css" /> -->
       <link rel="stylesheet" href="/css/services.css" />
       <link rel="stylesheet" href="/css/about.css" />
+      <link rel="stylesheet" href="/css/map.css" />
       <link rel="stylesheet" href="/css/contact-form.css" />
       <link rel="stylesheet" href="/css/footer.css" />
 
@@ -138,29 +139,13 @@
     <section class="partners">
       <h2>Our Associate Partners</h2>
       <p>
-        We are proud to collaborate with a network of trusted partners to
+        We are proud to collaborate with a global network of trusted partners to
         deliver exceptional services and solutions.
       </p>
-      <ul class="partner-logos">
-        <li>
-          <img
-            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
-            alt="Partner 1"
-          />
-        </li>
-        <li>
-          <img
-            src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
-            alt="Partner 2"
-          />
-        </li>
-        <li>
-          <img
-            src="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
-            alt="Partner 3"
-          />
-        </li>
-      </ul>
+      <div id="map-scroll-wrapper">
+        <div id="svg-container"></div>
+      </div>
+    </section>
 
     <!-- Contact Form Section  -->
     <section class="contact-form" id="contact-form">
@@ -180,7 +165,26 @@
           <label for="message">Message</label>
           <textarea type="text"></textarea>
           <button type="submit" id="submit">Submit</button>
+          <p class="inline-contact-info">
+            Alternatively, you can contact our managers
+            <button type="button" id="show-numbers" class="contact-link-button">
+              by phone.
+            </button>
+          </p>
         </form>
+
+        <div id="contact-popup" class="contact-popup">
+          <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <h3>Manager Contact Numbers</h3>
+            <ul>
+              <li href="tel:+359892024246">
+                Rahul, Marketing Manager: +359892024246
+              </li>
+              <li href="tel:+359896918383">Alex, Manager: +359896918383</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -201,5 +205,37 @@
         Kavhan Services. All rights reserved.
       </p>
     </footer>
+    <script src="/src/mapdata.js"></script>
+    <!-- Map rendering script -->
+    <script>
+      fetch("/css/img/world_interactive.svg")
+        .then((response) => response.text())
+        .then((svg) => {
+          document.getElementById("svg-container").innerHTML = svg;
+        })
+        .catch((error) => {
+          console.error("Error loading SVG:", error);
+        });
+    </script>
+    <!-- Phone numbers popup -->
+    <script>
+      const showBtn = document.getElementById("show-numbers");
+      const popup = document.getElementById("contact-popup");
+      const closeBtn = document.getElementById("close-popup");
+
+      showBtn.addEventListener("click", () => {
+        popup.classList.add("visible");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        popup.classList.remove("visible");
+      });
+
+      window.addEventListener("click", (e) => {
+        if (e.target === popup) {
+          popup.classList.remove("visible");
+        }
+      });
+    </script>
   </body>
 </html>
