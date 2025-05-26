@@ -87,8 +87,8 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, #f9f9f9, #ececec);
-  background-image: url("/css/img/bibhash-polygon-cafe-banerjee-TFqm8EYU9fw-unsplash.jpg");
+  /* background: linear-gradient(to bottom, #f9f9f9, #ececec); */
+  background-image: url("/css/img/1-xl-jet-airplane-landing-at-sunset-sharply-done.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
