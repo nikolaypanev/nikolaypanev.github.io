@@ -145,9 +145,96 @@
         We are proud to collaborate with a global network of trusted partners to
         deliver exceptional services and solutions.
       </p>
-      <div id="map-scroll-wrapper">
-        <div id="svg-container"></div>
+      <div class="cards-grid">
+        <img
+          src="/css/img/countrylist/qatar.webp"
+          alt="Qatar"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/uae.webp"
+          alt="United Arab Emirates"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/saudi-arabia.webp"
+          alt="Saudi Arabia"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/bahrain.webp"
+          alt="Bahrain"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/india.webp"
+          alt="India"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/morocco.webp"
+          alt="Morocco"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/poland.webp"
+          alt="Poland"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/portugal.webp"
+          alt="Portugal"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/malta.webp"
+          alt="Malta"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/russia.webp"
+          alt="Russia"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/uk.webp"
+          alt="United Kingdom"
+          class="country-card"
+          loading="lazy"
+        />
+        <img
+          src="/css/img/countrylist/pakistan.webp"
+          alt="Pakistan"
+          class="country-card"
+          loading="lazy"
+        />
+        <!-- to add  -->
+        <!-- Kuwait
+         Oman
+         Malaysia
+         Nepal
+         Cyprus
+         Hungary
+         Croatia
+         Serbia
+         Ghana
+         Bangladesh
+         Sri Lanka -->
       </div>
+
+      <!-- <div id="map-scroll-wrapper">
+        <div id="svg-container"></div>
+      </div> -->
     </section>
 
     <!-- Contact Form Section  -->
@@ -258,6 +345,25 @@
             });
           }
         });
+      });
+    </script>
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // animate only once
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      document.querySelectorAll(".cards-grid img").forEach((img) => {
+        observer.observe(img);
       });
     </script>
   </body>
