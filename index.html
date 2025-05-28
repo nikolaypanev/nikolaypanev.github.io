@@ -48,9 +48,15 @@
       <nav>
         <ul>
           <!-- <li><a href="#services-overviews">Services Overview</a></li> -->
-          <li class="navbar-item"><a href="#about">Who are we?</a></li>
-          <li class="navbar-item"><a href="#partners">Partner Network</a></li>
-          <li class="navbar-item"><a href="#contact-form">Contact us</a></li>
+          <li class="navbar-item">
+            <a href="#" data-target="about">Who are we?</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" data-target="partners">Partner Network</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" data-target="contact-form">Contact us</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -237,6 +243,21 @@
         if (e.target === popup) {
           popup.classList.remove("visible");
         }
+      });
+    </script>
+    <script>
+      document.querySelectorAll("a[data-target]").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("data-target");
+          const target = document.getElementById(targetId);
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
       });
     </script>
   </body>
