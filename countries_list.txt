@@ -4,45 +4,45 @@
 
 + Saudi Arabia 🇸🇦 (3 branches)
 
-Kuwait 🇰🇼
++ Kuwait 🇰🇼
 
 + Bahrain 🇧🇭
 
-Oman 🇴🇲
++ Oman 🇴🇲
 
-Malaysia 🇲🇾
++ Malaysia 🇲🇾
 
-Nepal 🇳🇵 (4 branches)
++ Nepal 🇳🇵 (4 branches)
 
 + India 🇮🇳 (3 branches)
 
 + Morocco 🇲🇦
 
-Cyprus 🇨🇾
++ Cyprus 🇨🇾
 
 + Poland 🇵🇱
 
 + Portugal 🇵🇹
 
-Hungary 🇭🇺
++ Hungary 🇭🇺
 
 + Malta 🇲🇹
 
-Croatia 🇭🇷
++ Croatia 🇭🇷
 
-Serbia 🇷🇸
++ Serbia 🇷🇸
 
 + Russia 🇷🇺
 
 + UK 🇬🇧
 
-Ghana 🇬🇭
++ Ghana 🇬🇭
 
-Bangladesh 🇧🇩
++ Bangladesh 🇧🇩
 
 + Pakistan 🇵🇰
 
-Sri Lanka 🇱🇰
++ Sri Lanka 🇱🇰
 
 I have a list of the following countries:
 - Kuwait
