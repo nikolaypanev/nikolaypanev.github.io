@@ -43,22 +43,3 @@
 + Pakistan 🇵🇰
 
 + Sri Lanka 🇱🇰
-
-I have a list of the following countries:
-- Kuwait
-- Oman
-- Malaysia
-- Nepal
-- Cyprus
-- Hungary
-- Croatia
-- Serbia
-- Ghana
-- Bangladesh
-- Sri Lanka
-
-My client wants a visual representation of this list. He wants every country to be represented on a card. 
-The card contains the country borders, which are filled with the country flag, and on the bottom there is 
-a skyline representation of popular country landmarks. The image I uploaded is an example of what I just described.
-
-Create a card like that for every country on that list

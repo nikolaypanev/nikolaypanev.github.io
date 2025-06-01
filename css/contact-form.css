@@ -1,6 +1,4 @@
 .contact-form {
-  /* background-color: var(--color-light-bg); */
-  /* background-color: rgba(54, 54, 66, 0.4); */
   padding: 2rem 1rem;
   font-family: var(--font-body);
   background-image: url("/css/img/phone.png");
@@ -72,24 +70,19 @@
 }
 
 .contact-form #submit {
-  background-color: #1a237e; /* primary blue */
-  color: white; /* text color */
-  border: none; /* remove default border */
-  padding: 0.75rem 1.5rem; /* space inside the button */
-  border-radius: 6px; /* rounded corners */
-  font-weight: 600; /* bold text */
-  cursor: pointer; /* pointer on hover */
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .contact-form #submit:hover {
-  background-color: #121a5c; /* darker shade on hover */
+  background-color: #121a5c;
 }
-
-/* .contact-form #submit:hover {
-  background-color: var(--color-primary-hover);
-  transform: translateY(-1px);
-} */
 
 .contact-form #submit:active {
   transform: translateY(0);
