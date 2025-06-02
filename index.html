@@ -286,70 +286,9 @@
       </p>
     </footer>
     <script src="/src/mapdata.js"></script>
-    <!-- Map rendering script -->
-    <script>
-      fetch("/css/img/world_interactive.svg")
-        .then((response) => response.text())
-        .then((svg) => {
-          document.getElementById("svg-container").innerHTML = svg;
-        })
-        .catch((error) => {
-          console.error("Error loading SVG:", error);
-        });
-    </script>
-    <!-- Phone numbers popup -->
-    <script>
-      const showBtn = document.getElementById("show-numbers");
-      const popup = document.getElementById("contact-popup");
-      const closeBtn = document.getElementById("close-popup");
-
-      showBtn.addEventListener("click", () => {
-        popup.classList.add("visible");
-      });
-
-      closeBtn.addEventListener("click", () => {
-        popup.classList.remove("visible");
-      });
-
-      window.addEventListener("click", (e) => {
-        if (e.target === popup) {
-          popup.classList.remove("visible");
-        }
-      });
-    </script>
-    <script>
-      document.querySelectorAll("a[data-target]").forEach((link) => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute("data-target");
-          const target = document.getElementById(targetId);
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
-    </script>
-    <script>
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target); // animate only once
-            }
-          });
-        },
-        {
-          threshold: 0.1,
-        }
-      );
-
-      document.querySelectorAll(".cards-grid img").forEach((img) => {
-        observer.observe(img);
-      });
-    </script>
+    <script src="/src/mapRender.js"></script>
+    <script src="/src/contactPopup.js"></script>
+    <script src="/src/smoothScroll.js"></script>
+    <script src="/src/cardLoader.js"></script>
   </body>
 </html>
